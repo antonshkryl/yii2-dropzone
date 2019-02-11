@@ -12,13 +12,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist perminder-klair/yii2-dropzone "dev-master"
+php composer.phar require --prefer-dist antonshkryl/yii2-dropzone "dev-master"
 ```
 
 or add
 
 ```
-"perminder-klair/yii2-dropzone": "dev-master"
+"antonshkryl/yii2-dropzone": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -30,14 +30,14 @@ Usage
 Once the extension is installed, simply use it in your code by to create Ajax upload area :
 
 ```php
-echo \kato\DropZone::widget();
+echo \antonshkryl\DropZone::widget();
 ```
 
 
 To pass options : (More details at [dropzonejs official docs](http://www.dropzonejs.com/#toc_6) )
 
 ```php
-echo \kato\DropZone::widget([
+echo \antonshkryl\DropZone::widget([
        'options' => [
            'maxFilesize' => '2',
        ],
