@@ -1,17 +1,20 @@
 <?php
 
-namespace kato;
+namespace antonshkryl;
 
 use yii\helpers\Html;
 use yii\helpers\Json;
-use kato\assets\DropZoneAsset;
+use yii\widgets\InputWidget;
+use antonshkryl\assets\DropZoneAsset;
+use yii\web\View;
 
 /**
- * Usage: \kato\dropzonejs\DropZone::widget();
+ * You can use this widget in an [[\yii\widgets\ActiveForm|ActiveForm]] using the [[\yii\widgets\ActiveField::widget()|widget()]]
+ * method.
  * Class DropZone
- * @package kato
+ * @package antonshkryl
  */
-class DropZone extends \yii\base\Widget
+class DropZone extends InputWidget
 {
     /**
      * @var array An array of options that are supported by Dropzone
@@ -80,7 +83,7 @@ class DropZone extends \yii\base\Widget
             }
         }
 
-        $view->registerJs($js);
+        $view->registerJs($js, View::POS_END);
         DropZoneAsset::register($view);
     }
 }
