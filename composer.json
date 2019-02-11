@@ -1,8 +1,13 @@
 {
-    "name": "perminder-klair/yii2-dropzone",
+    "name": "antonshkryl/yii2-dropzone",
     "description": "DropzoneJs Extention for Yii2",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension","dropzone","upload"],
+    "keywords": [
+        "yii2",
+        "extension",
+        "dropzone",
+        "upload"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -16,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "kato\\": ""
+            "antonshkryl\\": ""
         }
     }
 }
