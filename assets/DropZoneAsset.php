@@ -1,6 +1,6 @@
 <?php
 
-namespace kato\assets;
+namespace antonshkryl\assets;
 
 use yii\web\AssetBundle;
 
